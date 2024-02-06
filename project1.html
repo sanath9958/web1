@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping mall</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+        .box{
+            margin-top: 200px;
+            height: 50vh;
+            border: solid inset;
+            border-color: red;
+            background:url(light.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: rgb(250, 250, 250);
+            
+            
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            justify-content: center;
+            padding-top: 10%;
+
+        
+            
+        }
+        p{
+            text-align: center;
+            margin-top: 20px;
+            text-transform: capitalize;
+            
+        }
+        h5{
+            text-align: center;
+            margin-top: 50px;
+            text-transform: capitalize;
+        }
+       
+        .hello{
+            background-color: antiquewhite;
+            padding: 10px;
+        
+            
+        }
+        .hello ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50%;
+        
+
+            
+        }
+        .hello ul li a{
+            text-decoration: none;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        .hello ul li :hover{
+            border-bottom: solid;
+
+    
+        }
+        
+        .logo{
+            font-size: larger;
+            text-transform: capitalize;
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        #heading{
+            border-bottom: dotted;
+            margin-inline-end: 10px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        #card{
+            height: 45vh;
+            margin-top: 120px;
+            display:flex;
+            justify-content: space-around;
+            
+        }
+        .food{
+            height: 40vh;
+            width: 250px;
+            box-shadow:0px 0px 10px black;
+            background: url(https://imgs.search.brave.com/UJZFLtp4ZlKg6gjZW1S1glrIup_2_2lfuWYxzsNpjr8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/Mzg1MzA5L3Bob3Rv/L3BpenphLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1DSFhS/NHpxMDVlcnV4YTQ5/TWJoMTllOWNNVlVn/Wkt4VTJwSGFkVUVW/Wm9JPQ);
+            background-size: cover;
+            background-position: center;
+            background-size: 299px;
+            margin-left: 20px;
+            color: black;
+
+        }
+        h4 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .food p{
+            margin-top: 140px;
+        }
+        .food h4 a{
+            text-decoration: none;
+            color: black;
+        }
+            
+    
+        .food:hover{
+            box-shadow: 3px 3px 20px rgb(56, 228, 13);
+        }
+        
+        
+        .meals{
+            height: 40vh;
+            width: 250px;
+            box-shadow:0px 0px 10px black;
+            background:url(https://imgs.search.brave.com/M4MwK4WTf_0FvbZSCaK3HjtuO-wOHwF7SJW_ehLxQic/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3cy4xMjNyZi5j/b20vaW1hZ2VzL3dh/dHRoYW5vL3dhdHRo/YW5vMTYwMi93YXR0/aGFubzE2MDIwMDAw/My81NDEwNTYzNS1j/aGlja2VuLWJpcnlh/bmktd2l0aC1yaWNl/LW9uLXdoaXRlLWJh/Y2tncm91bmQuanBn);
+            background-size: cover;
+            background-position: center;
+            background-size: 289px;
+            margin-left: 20px;
+            color: rgb(0, 0, 0);
+
+        }
+         .meals p{
+            padding-top: 135px;
+        }
+        .meals:hover{
+            box-shadow: 3px 3px 20px rgb(34, 13, 228);
+        }
+        .meals h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .kfc{
+            height: 40vh;
+            width: 250px;
+            box-shadow:0px 0px 10px black;
+            background: url(https://imgs.search.brave.com/N1XVgH8wKUWAUYbe3hVUogznBl4wSYC1Hci7FOOoDkk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9rZmMtY2hpY2tl/bi1mcnktd2l0aC13/aGl0ZS1iYWNrZ3Jv/dW5kXzk4NzY5NC01/MzAuanBn);
+            background-size: cover;
+            background-position: center;
+            background-size: 220px;
+            margin-left: 20px;
+            color: black;
+
+        }
+        .kfc h4{
+            margin-top: 20px;
+        }
+        .kfc p{
+            margin-top: 170px;
+        }
+        .kfc h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .kfc:hover{
+            box-shadow: 3px 3px 20px rgb(228, 13, 13);
+        }
+        .drinks{
+            height: 40vh;
+            width: 250px;
+            box-shadow:0px 0px 10px black;
+            background: url(https://imgs.search.brave.com/648utDmKjAH1OlhE-Rx3DQW25D_ULW3kD3uPEebmkAo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDk5OTM3/MzkuanBn);
+            background-size: cover;
+            background-position: center;
+            background-size: 220px;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            color: black;
+        }
+        .drinks h4{
+            margin-top: 10px;
+        }
+        .drinks p{
+            margin-top: 180px;
+        }
+        .drinks h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .drinks:hover{
+            box-shadow: 3px 3px 20px rgb(160, 13, 228);
+        }
+        #second{
+            border-bottom: dotted;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 70px;
+        }
+        .cloths{
+            margin-top: 100px;
+            height: 40vh;
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        .shirt {
+
+            height: 50vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/_NaTiKq-Nlnd7U51Hz8l16EsL89ZiaPyFkofpUrDhsc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/OTY3NTUwOTQ1MTQt/Zjg3ZTM0MDg1YjJj/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tkh4OGMy/aHBjblJ6ZkdWdWZE/QjhmREI4Zkh3dw.jpeg);
+            background-size: cover;
+            background-position: 5px;
+            box-shadow: 1px 1px 20px black;
+        }
+        .shirt:hover{
+            box-shadow: 3px 3px 20px rgb(56, 228, 13);
+        } 
+        .shirt h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .pant{
+            height: 50vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/gByNBGZMnzpJ4mSCgWQijUpbZAuK_HwlsltDUtFD-5k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzM1LzMzLzc5/LzM2MF9GXzEzNTMz/Nzk2MF91MjR4eHhV/TjRtYnpzV3htbGhM/Z2xLOW8ydzVXUVNi/Qi5qcGc);
+            background-size: cover;
+            background-position: -180px;
+            box-shadow: 1px 1px 20px black;
+        
+        }
+        .pant:hover{
+            box-shadow: 3px 3px 20px rgb(228, 163, 13);
+        }
+        .pant h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .saree{
+            height: 50vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/C3QY6U69B0RG2LIfv-n4mmwNYYcSuxEQcS_gKTO29BQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM2L2U2/LzBmLzM2ZTYwZjYz/ZjA3MzgzMzM1Y2Zh/ZGZkMjIyMDIwNDhm/LmpwZw);
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        .saree:hover{
+            box-shadow: 3px 3px 20px rgb(13, 228, 203);
+        }
+        .saree h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .nightwere{
+            height: 50vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/9Ty0hNWpaITlPWm2izTH1B8hFusj_XVL6pvzgiYIcFU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/Lzg1MTg1OTgvYy84/NjcvODY3LzAvMjcw/L2lsLzJiOGViZS8z/Nzk5MjEwNDU1L2ls/XzYwMHg2MDAuMzc5/OTIxMDQ1NV9iOXU5/LmpwZw);
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        .nightwere h4 {
+            
+            margin-top:20px;
+            
+        }
+        .nightwere h4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .nightwere:hover{
+            box-shadow: 3px 3px 20px rgb(13, 27, 228);
+        }
+        .mobile{
+            margin-top: 130px;
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        .vivo{
+            height: 40vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/oZlxI2jhoi5EN7Hd5VjyaIMvT-c47zDuHb1jkQmrFA8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZWM4/ZjdhYWMtOGE1MS00/ZmM3LTk1ODUtMjk2/Yzg4ZDIyNjQwLjJk/MzdhZjIzYjRiZTFh/YzdlMTI1Nzg3N2Nl/YzE2MDVlLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG );
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        #mobile{
+            margin-top: 170px;
+            border-bottom: dotted;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .name{
+            margin-top:20px;
+        }
+        .name a{
+            text-decoration: none;
+            color: black;
+        }
+        .vivo:hover{
+            box-shadow: 3px 3px 20px rgb(56, 228, 13);
+        }
+        .samsung{
+            height: 40vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/oZlxI2jhoi5EN7Hd5VjyaIMvT-c47zDuHb1jkQmrFA8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZWM4/ZjdhYWMtOGE1MS00/ZmM3LTk1ODUtMjk2/Yzg4ZDIyNjQwLjJk/MzdhZjIzYjRiZTFh/YzdlMTI1Nzg3N2Nl/YzE2MDVlLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG);
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        .name2 {
+            margin-top: 20px;
+
+        }
+        .name2 a{
+            text-decoration: none;
+            color: black;
+        }
+        .samsung:hover{
+            box-shadow: 3px 3px 20px rgb(228, 24, 13);
+        }
+        .oppo{
+            height: 40vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/oZlxI2jhoi5EN7Hd5VjyaIMvT-c47zDuHb1jkQmrFA8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZWM4/ZjdhYWMtOGE1MS00/ZmM3LTk1ODUtMjk2/Yzg4ZDIyNjQwLjJk/MzdhZjIzYjRiZTFh/YzdlMTI1Nzg3N2Nl/YzE2MDVlLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG);
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        .name3{
+            margin-top: 20px;
+        }
+        .name3 a{
+            text-decoration: none;
+            color: black;
+        }
+        .oppo:hover{
+            box-shadow: 3px 3px 20px rgb(228, 13, 128);
+        }
+        .iphone{
+            height: 40vh;
+            width: 250px;
+            background: url(https://imgs.search.brave.com/oZlxI2jhoi5EN7Hd5VjyaIMvT-c47zDuHb1jkQmrFA8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZWM4/ZjdhYWMtOGE1MS00/ZmM3LTk1ODUtMjk2/Yzg4ZDIyNjQwLjJk/MzdhZjIzYjRiZTFh/YzdlMTI1Nzg3N2Nl/YzE2MDVlLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG);
+            background-size: cover;
+            box-shadow: 1px 1px 20px black;
+        }
+        .name4{
+            margin-top: 20px;
+        }
+        .name4 a{
+            text-decoration: none;
+            color: black;
+        }
+        .iphone:hover{
+            box-shadow: 3px 3px 20px rgb(13, 31, 228);
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="hello">
+        <div class="logo">sunny💓</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#heading">Food</a></li>
+            <li><a href="#second">Cloths</a></li>
+            <li><a href="#mobile">Mobile</a></li>
+            
+        </ul>
+    </div>
+   <div class="box">
+    <h1>welcome to my website</h1>
+    <p>"Food is our common ground, a universal experience."
+    </p>
+    <h5>thanks for visiting my website.......</h5>
+   </div> 
+    <h1 id="heading">FOOD ITEMS</h1>
+   <div id="card">
+        <div class="food">
+            <H4><a href="#"> THIS IS PIZZA</a></H4>
+            <P>This is very delesious and very spicy
+                and very resionble price
+            </P>
+        </div>
+        <div class="meals">
+            <h4><a href="#"> THIS IS RICE</a></h4>
+            <p>this is very yummy in andhra style</p>
+        </div>
+        <div class="kfc">
+            <h4><a href="#">THIS IS KFC</a></h4>
+            <p>this is very tasty and very soft</p>
+        </div>
+        <div class="drinks">
+            <h4><a href="#">THIS IS COOL DRINKS</a></h4>
+            <p>in this cool drink very helthy</p>
+        </div>
+   </div>
+    <h1 id="second">CLOTHS</h1>
+   <div class="cloths">
+    <div class="shirt">
+        <h4><a href="#">SHIRTS</a></h4>
+    </div>
+    <div class="pant">
+        <h4><a href="#">PANT</a></h4>
+    </div>
+    <div class="saree">
+        <h4><a href="#">SAREE</a></h4>
+    </div>
+    <div class="nightwere">
+        <h4><a href="#">NIGHT WERE</a></h4>
+    </div>
+   </div>
+   <h1 id="mobile">MOBILES</h1>
+   <div class="mobile">
+    <div class="vivo">
+        <h4 class="name"><a href="">VIVO</a></h4>
+    </div>
+    <div class="samsung">
+        <h4 class="name2"><a href="">SAMSUNG</a></h4>
+    </div>
+    <div class="oppo">
+        <h4 class="name3">
+            <a href="">OPPO</a>
+        </h4>
+    </div>
+    <div class="iphone">
+        <h4 class="name4"><a href="">i PHONE</a></h4>
+    </div>
+   </div>
+</body>
+</html>
